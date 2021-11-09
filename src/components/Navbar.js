@@ -27,7 +27,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/portfolio">
                 <div className="img-fluid logo" alt="brand" href="#">its.me<span>.vaibhavkarnwal</span></div>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -43,8 +43,38 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                 Portfolio
+              <Nav.Link as={Link} to="/portfolio" onClick={() => updateExpanded(false)}>
+                 Home
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                About
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -61,10 +91,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/programs"
+                to="/solutionGuide"
                 onClick={() => updateExpanded(false)}
               >
-                Programs
+                SolutionGuide
               </Nav.Link>
             </Nav.Item>
 
